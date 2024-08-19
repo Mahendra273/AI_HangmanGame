@@ -15,6 +15,7 @@ const WordCategorie = ({handlefetchdata}:WordCategiresProps) => {
   // State for categories and fetched word data
   const [categories, setCategories] = useState<string[]>(category.category);
   const [wordData, setWordData] = useState<string[]>([]);
+ 
 
   // Function to handle category click
   async function handleCategoryClick(category: string) {
@@ -36,7 +37,7 @@ const WordCategorie = ({handlefetchdata}:WordCategiresProps) => {
     <>
     <div className="flex flex-col items-center justify-center gap-4">
       <h5 className="">Choese the categories</h5>
-      <div className="flex  justify-center items-center  gap-2">
+      <div className="flex flex-wrap justify-center items-center  gap-2">
         {categories.map((item, i) => (
           <div
             className="flip-card "
@@ -46,7 +47,7 @@ const WordCategorie = ({handlefetchdata}:WordCategiresProps) => {
           
         <div className="flip-card-inner">
         <div className="flip-card-front">
-            <p className="title">{item}</p>
+            <p className="title">{item?.split(' ').slice(0,2).join(' ')}</p>
             <p>Hover Me</p>
         </div>
         <div className="flip-card-back">

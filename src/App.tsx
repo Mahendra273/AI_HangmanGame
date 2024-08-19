@@ -31,11 +31,9 @@ function back(){
   setIstrue(true)
 }
   return (
-    <div className='bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] bg-indigo-200 h-[100vh] '>
+    <div className='bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] bg-indigo-200 h-[100%] '>
       <div className='font-adlam  lg:w-[100%] md:w-[100%] h-[100%] flex items-center flex-col gap-4 mx-auto justify-center p-2'>
         <Toaster />
-       
-
         {istrue?(
        
         <WordCategorie handlefetchdata={handlefetchdata} />

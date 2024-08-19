@@ -3,7 +3,7 @@ import HangmanDraw from './HangmanDraw';
 import HangmanWord from './HangmanWord';
 import Keyboard from './Keyboard';
 import { Toaster, toast } from 'react-hot-toast';
-import jsonTesting from '../TestingJson';
+
 interface WordData {
   wordCategorie: string;
   wordList: string[];
@@ -102,7 +102,7 @@ const gameOver= isLoser || isWinner
   return (
     <div className='w-[80%] h-[80%]'>
     
-       <h3 className='text-left self-start'> {wordCategorie}</h3>
+       <h3 className='text-left self-start'> {wordCategorie?.split(' ').slice(0,2).join(' ')}</h3>
         {/* I want to know how many times I chose the wrong letter */}
         <HangmanDraw numberOfGuess={incorrectLetters.length} />
         <HangmanWord

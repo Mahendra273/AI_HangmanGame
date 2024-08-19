@@ -1,12 +1,33 @@
 {
-    "category": [
-      "animal",
-      "home",
-      "family",
-      "technology",
-      "sea",
-      "movies"
-    ]
-  }
-  
- 
+  "category": [
+    "animal",
+    "home",
+    "family",
+    "technology",
+    "sea",
+    "movies",
+    "Animals",
+    "Clothing",
+    "House Objects",
+    "Colors",
+    "Fruits",
+    "Days of the Week",
+    "Family Members",
+    "Body Parts",
+    "Simple Actions (verbs like run, jump, swim)",
+    "Days of the Week",
+    "Names of months",
+    "Weather Terms",
+    "School Supplies",
+    "Simple Adjectives (happy, sad, big, small)",
+    "Occupations",
+    "Simple Foods",
+    "Common Nouns (tree, house, car)",
+    "Sports",
+    "Animals and their Habitats",
+    "Common Idioms",
+    "Space (planets, stars)",
+    "Musical Instruments",
+    "Geography (rivers, mountains)"
+  ]
+}
