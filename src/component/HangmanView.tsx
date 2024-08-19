@@ -46,6 +46,7 @@ const [wordToGuess, setWordToGuess] = useState(getRandomWord());
   function tryAgain(
  
   ) {
+ 
     setGuessLetters([]); // Reset the guessed letters
     setWordToGuess(getRandomWord()); // Reset the word to guess
   }
@@ -100,10 +101,11 @@ const [wordToGuess, setWordToGuess] = useState(getRandomWord());
 
 const gameOver= isLoser || isWinner
   return (
-    <div className='w-[80%] h-[80%]'>
+    <div className='w-[80%] h-[80%] flex flex-col gap-2 items-center'>
     
-       <h3 className='text-left self-start'> {wordCategorie?.split(' ').slice(0,2).join(' ')}</h3>
+       
         {/* I want to know how many times I chose the wrong letter */}
+        <h3 className='text-2xl capitalize font-medium text-rose-400 absolute right-[100px] top-3' > {wordCategorie?.split(' ').slice(0,2).join(' ')}</h3>
         <HangmanDraw numberOfGuess={incorrectLetters.length} />
         <HangmanWord
           result={isLoser}

@@ -6,7 +6,7 @@ type HangmanWordProps = {
 
 const HangmanWord = ({ guessLetters, wordToGuess, result = false }: HangmanWordProps) => {
   return (
-    <div className='flex gap-3 text-3xl lg:text-4xl font-bold uppercase'>
+    <div className='flex gap-3 text-3xl lg:text-4xl font-bold uppercase mx-auto w-fit'>
       {/* take the word, create individual characters, write with map */}
       {wordToGuess.split('').map((letter, index) => (
         <span className='border-b-8 border-black rounded-md w-[65px] text-center' key={index}>

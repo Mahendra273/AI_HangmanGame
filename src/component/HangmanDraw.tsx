@@ -94,7 +94,7 @@ type HangmanDrawProps = {
 
 const HangmanDraw = ({ numberOfGuess }: HangmanDrawProps) => {
   return (
-    <div style={{ position: 'relative' }} >
+    <div style={{ position: 'relative',width:'263px' }} className="mx-auto	">
        {BODY_PARTS.slice(0, numberOfGuess).map((part, index) => (
         <React.Fragment key={index}>{part}</React.Fragment>
       ))}
