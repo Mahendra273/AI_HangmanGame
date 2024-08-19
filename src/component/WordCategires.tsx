@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { handleChatGpt } from './Apiservices'; // Ensure this path is correct
 import category from "../CategariesJson.json";
 
@@ -13,8 +13,8 @@ type WordCategiresProps={
 
 const WordCategorie = ({handlefetchdata}:WordCategiresProps) => {
   // State for categories and fetched word data
-  const [categories, setCategories] = useState<string[]>(category.category);
-  const [wordData, setWordData] = useState<string[]>([]);
+  const [categories] = useState<string[]>(category.category);
+  //const [wordData, setWordData] = useState<string[]>([]);
  
 
   // Function to handle category click

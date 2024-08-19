@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import HangmanDraw from './HangmanDraw';
 import HangmanWord from './HangmanWord';
 import Keyboard from './Keyboard';
-import { Toaster, toast } from 'react-hot-toast';
+import {  toast } from 'react-hot-toast';
 
 interface WordData {
   wordCategorie: string;

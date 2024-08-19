@@ -1,6 +1,6 @@
 import {  useState } from 'react';
 //import jsonTesting from './TestingJson';
-import { Toaster, toast } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 
 import HangmanView from './component/HangmanView';
 import WordCategorie from './component/WordCategires';
@@ -43,7 +43,7 @@ function back(){
         <WordCategorie handlefetchdata={handlefetchdata} />
          ) :(
           <>            
-          <button type='button ' className='absolute left-[100px] top-3 capitalize back_button' onClick={back}>back</button>
+          <button  className='absolute left-[100px] top-3 capitalize back_button' onClick={back}>back</button>
           {data && <HangmanView data={data }/>}
           </>
 
