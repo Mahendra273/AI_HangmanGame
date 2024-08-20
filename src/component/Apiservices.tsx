@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export async function handleChatGpt(category: string) {
-  const API_KEY = import.meta.env.VITE_OPENAI_API_KEY || "";
+  const API_KEY = `AIzaSyDci3tSw5OLsMeLitgPdf2-SmBr02XxKBE` || "";
 
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${API_KEY}`;
 
