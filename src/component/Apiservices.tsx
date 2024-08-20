@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export async function handleChatGpt(category: string) {
-  const API_KEY = `AIzaSyDci3tSw5OLsMeLitgPdf2-SmBr02XxKBE` || "";
+  const API_KEY = import.meta.env.VITE_OPENAI_API_KEY || "";
 
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${API_KEY}`;
 
@@ -12,7 +12,7 @@ export async function handleChatGpt(category: string) {
         "contents": [{
           "role": "user",
           "parts": [{
-            "text": `can you please provide 10 ${category} single word names`
+            "text": `can you please provide 100 ${category} single word names and it's should be less than 7 letters`
           }]
         }]
       },

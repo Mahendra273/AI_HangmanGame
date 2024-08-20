@@ -13,8 +13,6 @@ interface WordData {
   wordList: string[];
 }
 function App() {
- console.log(import.meta.env.VITE_OPENAI_API_KEY)
- 
   const[istrue,setIstrue]=useState<boolean>(true)
   const[isloading,setIsloading]=useState<boolean>(false)
   const [data, setData] = useState<WordData>();

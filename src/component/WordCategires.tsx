@@ -19,11 +19,11 @@ const WordCategorie = ({handlefetchdata}:WordCategiresProps) => {
 
   // Function to handle category click
   async function handleCategoryClick(category: string) {
-    console.log(import.meta.env.VITE_OPENAI_API_KEY)
+    
     handlefetchdata({ wordCategorie: '', wordList: [] }, true);
     try {
        let data= await handleChatGpt(category)
-       console.log(data)
+      
        if(data){
         setTimeout(()=>{
 
