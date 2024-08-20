@@ -12,7 +12,7 @@ export async function handleChatGpt(category: string) {
         "contents": [{
           "role": "user",
           "parts": [{
-            "text": `can you please provide 100 ${category} single word names and it's should be less than 7 letters`
+            "text": `can you please provide ${category} related 100 single-word names that are each less than 7 letters long`
           }]
         }]
       },
